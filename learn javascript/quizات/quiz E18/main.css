@@ -1,0 +1,22 @@
+.popup {
+    display: none;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f3f4;
+    width: 450px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+.popup span {
+    position: absolute;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    padding: 6px 12px;
+    font-size: 23px;
+    top: -15px;
+    right: -10px;
+}

@@ -1,0 +1,74 @@
+.assign-1-shape-1,.assign-1-shape-2,.assign-1-shape-3{
+    width: 500px;
+    position: center top;
+    background: rgb(138, 43, 226);
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 10px
+}
+.assign-1-shape-2{
+    background-color: rgb(138, 43, 226, 50%);
+}
+.assign-1-shape-3{
+    background-color: rgb(138, 43, 226, 10%);
+}
+
+.assign-2-shape-1,.assign-2-shape-2,.assign-2-shape-3,.assign-2-shape-4{
+    width: 400px;
+    height: 400px;
+    background-image: url('../css-assignment-5-8.png');
+    margin-bottom: 10px;
+}
+.assign-2-shape-1{
+    background-repeat: no-repeat;
+}
+.assign-2-shape-2{
+    background-repeat: repeat-y;
+}
+.assign-2-shape-3{
+    background-repeat: repeat-x
+}
+
+.assign-3-shape-1,.assign-3-shape-2,.assign-3-shape-3,.assign-3-shape-4{
+    width: 400px;
+    height: 400px;
+    background-image: url('../css-assignment-5-8.png');
+    margin-bottom: 10px;
+}
+.assign-3-shape-1{
+    background-repeat: no-repeat;
+}
+.assign-3-shape-2{
+    background-repeat: repeat-y;
+    background-position: right;
+}
+.assign-3-shape-3{
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.assign-4-shape-1,.assign-4-shape-2,.assign-4-shape-3,.assign-4-shape-4{
+    width: 400px;
+    height: 400px;
+    background-image: url('../css-assignment-5-8.png');
+    margin-bottom: 10px;
+}
+.assign-4-shape-1{
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.assign-4-shape-2{
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: 80%
+}
+.assign-4-shape-3{
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 80%
+}
+.assign-4-shape-4{
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50%
+}

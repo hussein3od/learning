@@ -1,0 +1,490 @@
+:hover
+.first-section{
+    background-image: linear-gradient(135deg, white, #abb8c0);
+    padding: 15px 0
+}
+.first-section header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 
+}
+.first-section header .links{
+    margin-right: 8px;
+    margin-top: 5px;
+    display: none;
+    position: relative
+}
+.first-section header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.first-section header .links .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 3px;
+    width: 100%
+}
+.first-section header .links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    min-width: 200px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    display: none
+}
+.first-section header .links{
+    transition: 1s
+}
+.first-section header .links:hover ul{
+    display: inline
+}
+.first-section header .links ul li{
+    padding: 15px;
+    transition: 0.5s
+}
+.first-section header .links ul li:hover{
+    padding-left: 25px;
+    background-color: #ccc
+}
+.first-section header .links ul :not(:last-child){
+    border-bottom: 1px solid #ddd
+}
+.first-section header .brand-name{
+    min-width: 185px;
+    font-size: 30px;
+    font-weight: bolder
+}
+.first-section header .visible-list{
+    margin-top: 10px;
+    display: flex;
+    margin-left: auto
+}
+.first-section header .visible-list li{
+    margin-right: 15px
+}
+.first-section header .visible-list li{
+    list-style: none;
+}
+.first-section header .loging {
+    margin-left: auto;
+    min-width: 109px;
+}
+.first-section header .loging span{
+    color: var(--main-color);
+}
+.first-section header .loging button{
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px
+}
+.header-part2{
+    display: grid;  
+    grid-template-columns: 40% 60%;
+}
+.header-part2 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+.header-part2 .text button{
+    width: fit-content;
+    background-color: #fc724d;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 4px;
+}
+.header-part2 .background{
+    justify-content: center;
+}
+.header-part2 .background img{
+    max-width: 100%;
+    max-height: 600px
+}
+.section-two{
+    margin-top: 100px
+}
+.section-two .container .parent {
+    margin-top: 100px;
+    margin-left: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, auto));
+    gap: 56px
+}
+.section-two .container .parent .card{
+    box-shadow: 5px 5px 5px #efefef;
+    padding: 26px;
+    min-width: 300px;
+}
+.section-two .container .parent .card i{
+    color: white;
+    background-color: #b6d7ff;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 30px
+}
+
+.section-two .container .parent .card h3{
+    position: relative;
+    margin-bottom: 40px
+}
+.section-two .container .parent .card h3::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #e74040;
+    border-radius: 8px;
+}
+.section-three .container .parent{
+    display: grid;
+    grid-template-columns: repeat(2, auto)
+}
+.section-three .container .descripe {
+    margin-bottom: 30px;
+}
+.section-three .container .parent .text h3{
+    margin-bottom: 15px;
+    margin-top: 30px
+}
+.section-three .container .parent .text h5{
+    margin-bottom: 10px;
+}
+.section-three .container .parent .text .child{
+    position: relative;
+    padding-left: 60px
+}
+.section-three .container .parent .text .child::before{
+    counter-increment: counter;
+    content: counter(counter, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #ececec;
+    color: #e74040;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-four .container .parent{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.section-four .container .parent img{
+    margin-top: 0;
+    width: 300px;
+    height: 300px;
+}
+.section-four .container .parent .text{
+    margin-top: 25px;
+}
+.section-four .container .text h1{
+    position: relative;
+}
+.section-four .container .text .descripe{
+    margin-bottom: 30px
+}
+.section-four .container .text h1::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #e74040;
+    top: -25px;
+    left: 0
+}
+.section-four .container .text button{
+    background-color: transparent;
+    border: none;
+    color: var(--main-color);
+    margin-bottom: 20px
+}
+.section-five .text .descripe {
+    margin-bottom: 40px
+}
+.section-five .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto))
+}
+.section-five .cards .card{
+    width: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%)
+}
+.section-five .cards .card-one .project {
+    background-image: url(../images/images.jfif)
+}
+.section-five .cards .card-two .project {
+    background-image: url(../images/Mens-Premium-T-Shirt-Hardcore.jpeg)
+}
+.section-five .cards .card-three .project {
+    background-image: url(../images/download\ \(2\).jfif)
+}
+.section-five .cards .card .project {
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.section-five .cards .card .icons{
+    display: flex;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.section-five .cards .card .project .icons i{
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 50%;;
+    transition: 0.5s
+}
+.section-five .cards .card .project .icons i:hover{
+    color: white;
+    background-color: #b6d7ff
+}
+.section-five .cards .card .project span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e74040;
+    color: white;
+}
+
+.section-five .cards .card .information{
+    padding: 10px;
+}
+.section-five .cards .card .information .descripe {
+    margin-bottom: 20px
+}
+.section-five .cards .card .information .bay{
+    margin-bottom: 20px;
+}
+.section-five .cards .card .information .bay i,
+.section-five .cards .card .information .price span{
+    color: #bdbdbd
+}
+.section-five .cards .card .information .price span{
+    margin-right: 5px;
+}
+.section-five .cards .card .information h4{
+    margin-bottom: 20px;
+}
+.section-five .cards .card .information .flex .title{
+    margin-bottom: 0;
+}
+.section-five .cards .card .information .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+.section-five .cards .card .information .flex .rates{
+    background-color: #26335d;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 11px;
+    color: #e4e6eb
+}
+.section-five .cards .card .information button{
+    margin-top: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--main-color);
+    background-color: transparent
+}
+.section-six{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-top: 125px;
+    background-color: #26335d
+}
+.section-six h1{
+    color: white
+}
+.section-six .descripe{
+    margin-bottom: 40px;
+    color: white
+}
+.section-six .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    gap: 30px
+}
+.section-six .cards .card{
+    background-color: white;
+    padding: 30px
+}
+.section-six .cards .card .free{
+    color: black;
+    text-transform: uppercase
+
+}
+.section-six .cards .card .descripe{
+    color: #737373;
+}
+.section-six .cards .card .price{
+    color: var(--main-color);
+}
+.section-six .container .cards .card i{
+    color: white;
+    background-color: var(--main-color);
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 50%;
+    margin-bottom: 35px
+}
+.section-six .container .cards .card h1.free{
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.section-six .container .cards .card h1.price{
+    color: var(--main-color);
+    margin-bottom: 0
+}
+.section-six .container .cards .card span{
+    color: #8ec2f2;
+}
+.section-six .container .cards .card p{
+    margin-top: 20px
+}
+.section-six .container .cards .card button{
+    color: white;
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.section-seven{
+    margin-top: 125px;
+}
+.section-seven .comments {
+    margin-top: 125px;
+    display: flex;
+    margin-left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.section-seven .comments .comment{
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    margin: auto
+}
+.section-seven .comments .comment .descripe{
+    font-size: 14px
+}
+.section-seven .comments .comment .person{
+    margin-top: 20px;
+    display: flex
+}
+.section-seven .comments .comment .person .image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.section-seven .comments .comment .person .name{
+    color: var(--main-color)
+}
+.section-seven .comments .comment .person .job{
+    font-size: 13
+}
+.section-seven .comments .comment .person .image img{
+    width: 50px;
+    height: 50px;
+}
+footer{
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+}
+footer form{
+    margin-top: 50px;
+    margin-bottom: 150px
+}
+footer form input{
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    background-color: #f9f9f9
+}
+footer form button{
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    margin-left: -5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+footer .parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 150px
+}
+footer .parent .box{
+    text-align: start;
+    padding: 10px;
+}
+footer .parent .box i{
+    color: var(--main-color)
+}
+footer .parent .box h4{
+    margin-bottom: 10px;
+}
+footer .parent .box ul:not(:last-child){
+    text-align: end;
+}
+footer .parent .box ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+footer .parent .box ul li{
+    list-style: none;
+    color: #737373
+}
+footer .footer{
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px
+}
+footer .footer p{
+    color: #737373
+}

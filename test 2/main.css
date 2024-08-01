@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+.parent{
+    display: flex;
+    width: 100%;
+}
+.sandwich {
+    margin: 10px;
+    display: none;
+    width: 33px;
+    height: 33px;
+    position: relative;
+    transition: 1s
+}
+.sandwich div{
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: black
+}
+nav {
+    position: fixed;
+    padding: 15px;
+    width: 75px;
+    height: 100vh;
+    display: flex;
+    border-right: 1px solid #ccc;
+    background-color: white;
+    transition: 0.5s
+}
+nav:hover{
+    width: 200px;
+}
+.parent nav .icons{
+    display: flex;
+    flex-direction: column;
+}
+.parent nav .icons i {
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.parent nav .discripe-icon{
+    display: flex;
+    flex-direction: column;
+}
+.parent nav .discripe-icon p {
+    display: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 16px;
+    margin-left: 7px;
+    cursor: pointer;
+    width: 100px;
+    transition: 1s;
+}
+.parent nav:hover .discripe-icon p{
+    display: block;
+}
+.parent nav .discripe-icon p:hover{
+    background-color: #ddd
+}
+.parent section{
+    width: 100%;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto))
+}
+.cards .card {
+    height: 300px;
+    background-color: rgb(50, 30, 115);
+    color: white;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 576px) {
+    nav {
+        position: absolute;
+        width: 75%;
+        transform: translateX(-100%);
+        border: none;
+    }
+    nav:hover{
+        transform: translateX(0);
+        width: 75%;
+        margin-top: -53px;
+        position: fixed;
+    }
+    .sandwich{
+        display: block
+    }
+    .sandwich:hover .overlay{
+        display: inline;
+    }
+    .parent nav .discripe-icon p {
+        display: inline;
+    }
+    .sandwich:hover ~ .parent nav {
+        transform: translateX(0);
+        position: fixed;
+        margin-top: -54px;
+    }
+}
+/* ~ */
